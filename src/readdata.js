@@ -24,7 +24,7 @@ function Readdata() {
                 </div>
                 <div className='d-flex justify-content-between mt-3' >
                     <Link type="submit" class="btn btn-primary" style={{width:150}} to={`/editdata/${id}`}>edit</Link>
-                    <Link type="submit" class="btn btn-warning" style={{width:150}} to="/">back</Link>
+                    <Link type="submit" class="btn btn-warning" style={{width:150}} to="/crud-with-redux">back</Link>
                 </div>
             </form>
         </div>

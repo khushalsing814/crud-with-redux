@@ -51,7 +51,7 @@ function Editdata() {
             toastSucess();
             fetchdata();
             setTimeout(() => {
-                navigate('/')
+                navigate('/crud-with-redux')
             }, 2000);
         }
     }
