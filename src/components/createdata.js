@@ -1,13 +1,15 @@
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
 import { CreateUsersdetails } from '../redux-toolkit/showuserDetails';
 
 function Createdata() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
+  
+
     const [inputData, setInputdata] = useState({});
 
     const handleData = (e) => {
@@ -34,7 +36,7 @@ function Createdata() {
             toastSucess();
             dispatch(CreateUsersdetails(inputData));
             setTimeout(() => {
-                navigate('/')
+            navigate('/crud-with-redux')
             }, 2000);
         }
     }
@@ -65,7 +67,7 @@ function Createdata() {
                 </div>
                 <div className='d-flex justify-content-between mt-3' >
                     <button className="btn btn-primary" style={{ width: 150 }}>Submit</button>
-                    <Link to="/" type="submit" className="btn btn-warning" style={{ width: 150 }}>Back</Link>
+                    <Link to="/crud-with-redux" type="submit" className="btn btn-warning" style={{ width: 150 }}>Back</Link>
                 </div>
             </form>
         </>
