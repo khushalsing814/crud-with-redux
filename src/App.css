@@ -1,0 +1,89 @@
+.bg_image{
+  background-image:url('https://websitedemos.net/sports-wear-store-04/wp-content/uploads/sites/828/2021/05/sports-hero-img.jpg') ;
+  position: relative;
+  height: 100%;
+  background-size: 100%;
+}
+ul span.text_capital::first-letter{
+  text-transform: lowercase !important;
+}
+/* .firstletteruppercase::first-letter{
+  text-transform: capitalize !important;
+} */
+.firstletteruppercase::first-letter {
+  font-size: 130%;
+  color: #ff0000;
+  font-weight: 600;
+}
+
+.parent_bg_image {
+   min-height: 100vh;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left:0;
+}
+.parent-table-image > img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-nav .nav-item .nav-link.active{
+  color: red;
+}
+
+.center_form{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.form_shadow {
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+  margin-bottom: 40px;
+  padding: 16px;
+}
+
+table > td , table>th{
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-nav .nav-item .nav-link{
+  color: #fff;
+}
+
+.max_width {
+ max-width: 1200px;
+}
+.img_parent{
+height: 508px;
+width: 376px;
+}
+.img_parent>img{
+  object-fit: contain;
+  max-width: 100%;
+  width: 100%;
+}
+
+.height_width{
+  height: 581px;
+  background-color: black;
+  width: 100%;
+}
+
+.parent{
+  max-height: 592px;
+  max-width: 600px;
+}
+
+.parent>img{
+  object-fit: cover;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+}
