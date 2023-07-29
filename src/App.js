@@ -25,7 +25,7 @@ function App() {
         <Footer/> */ }
       <BrowserRouter>
         <Routes>
-          <Route path ='/' element={<Apicalling />}></Route>
+          <Route  exact path ='/crud-with-redux' element={<Apicalling />}></Route>
           <Route path ='createdata' element={<Createdata />}></Route>
           <Route path ='editdata/:id' element={<Editdata />}></Route>
           <Route path ='readdata/:id' element={<Readdata />}></Route>
