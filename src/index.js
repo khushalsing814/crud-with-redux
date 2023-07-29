@@ -9,7 +9,7 @@ import { store } from './redux-toolkit/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <Provider store={store}>
+   <Provider basename='/crud-with-redux' store={store}>
         <App />
    </Provider>  
   </React.StrictMode>
