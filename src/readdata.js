@@ -7,7 +7,7 @@ function Readdata() {
     const [apiData, setApi] = useState([]);
     const { id } = useParams();
     useEffect(() => {
-        axios.get(`http://localhost:5000/data/${id}`).then(res => setApi(res?.data)).catch((error) => { console.log(error) })
+        axios.get(`https://api-testing-jivx.onrender.com/data/${id}`).then(res => setApi(res?.data)).catch((error) => { console.log(error) })
     }, [])
     return (
         <div>

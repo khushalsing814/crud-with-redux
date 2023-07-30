@@ -32,13 +32,13 @@ function Editdata() {
     });
 
     useEffect(()=>{
-         axios.get(`http://localhost:5000/data/${id}`)
+         axios.get(`https://api-testing-jivx.onrender.com/data/${id}`)
         .then(res => setInputdata(res?.data))
         .catch((error) => { console.log(error.message) })
     },[])
 
     const fetchdata = async () => {
-        await axios.put(`http://localhost:5000/data/${id}`, inputData)
+        await axios.put(`https://api-testing-jivx.onrender.com/data/${id}`, inputData)
             .then(res => setApi(res?.data))
             .catch((error) => { console.log(error.message) })
     }

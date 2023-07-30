@@ -49,7 +49,7 @@ function Apicalling() {
     const HandleDelled = (id) => {
         const confirm = window.confirm("Are you sure to want a record");
         if (confirm) {
-            axios.delete(`http://localhost:5000/data/${id}`)
+            axios.delete(`https://api-testing-jivx.onrender.com/data/${id}`)
                 .then(() => {
                     fetchData();
                 })

@@ -3,7 +3,7 @@ import axios from "axios";
 
 // create action (post Api)
 export const CreateUsersdetails = createAsyncThunk("createUsers", async (data, { rejectWithValue }) => {
-    const response = await axios.post(`http://localhost:5000/data`, data);
+    const response = await axios.post(`https://api-testing-jivx.onrender.com/data`, data);
     try {
         return response;
     } catch (error) {
@@ -13,7 +13,7 @@ export const CreateUsersdetails = createAsyncThunk("createUsers", async (data, {
 
 // create action  get user all details (get api)
 export const showalldata = createAsyncThunk("useralldata", async (arg, { rejectWithValue }) => {
-    const response = await fetch(`http://localhost:5000/data`);
+    const response = await fetch(`https://api-testing-jivx.onrender.com/data`);
     try {
         return await response.json();
     } catch (error) {
