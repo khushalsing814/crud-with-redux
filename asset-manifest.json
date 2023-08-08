@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/crud-with-redux/static/css/main.e7223881.css",
-    "main.js": "/crud-with-redux/static/js/main.54c9be54.js",
+    "main.css": "/crud-with-redux/static/css/main.82e698af.css",
+    "main.js": "/crud-with-redux/static/js/main.d9eea3e6.js",
     "static/js/787.68fd6ec3.chunk.js": "/crud-with-redux/static/js/787.68fd6ec3.chunk.js",
     "static/media/logo.svg": "/crud-with-redux/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/crud-with-redux/index.html",
-    "main.e7223881.css.map": "/crud-with-redux/static/css/main.e7223881.css.map",
-    "main.54c9be54.js.map": "/crud-with-redux/static/js/main.54c9be54.js.map",
+    "main.82e698af.css.map": "/crud-with-redux/static/css/main.82e698af.css.map",
+    "main.d9eea3e6.js.map": "/crud-with-redux/static/js/main.d9eea3e6.js.map",
     "787.68fd6ec3.chunk.js.map": "/crud-with-redux/static/js/787.68fd6ec3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7223881.css",
-    "static/js/main.54c9be54.js"
+    "static/css/main.82e698af.css",
+    "static/js/main.d9eea3e6.js"
   ]
 }
