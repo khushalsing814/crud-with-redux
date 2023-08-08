@@ -104,6 +104,9 @@ width: 376px;
   .min_width {
    min-width:80%;
   }
+  .set_width_style{
+    width: calc(100% - 10%);
+  }
 }
 @media only screen and (max-width: 440px) {
   .min_width {
@@ -114,5 +117,8 @@ width: 376px;
   }
   .set_margin{
     margin-right: 6px !important;
+  }
+  .font_size{
+    font-size: 14px !important;
   }
 }
