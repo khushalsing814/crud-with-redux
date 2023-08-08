@@ -58,7 +58,7 @@ function Editdata() {
     return (
         <>
            <ToastContainer/>
-            <form className='m-auto w-25 center_form form_shadow' onSubmit={handleSubmit} >
+            <form className='m-auto center_form form_shadow min_width' onSubmit={handleSubmit} >
                 <h1 className='text-center'>Update Record</h1>
                 <div className="form-group">
                     <label for="title">Title</label>
@@ -80,8 +80,8 @@ function Editdata() {
                     </div>
                 </div>
                 <div className='d-flex justify-content-between mt-3' >
-                    <button className="btn btn-primary" style={{ width: 150 }}>Update</button>
-                <Link to={`/readdata/${id}`} type="submit" class="btn btn-warning" style={{width:150}}>Back</Link>
+                    <button className="btn btn-primary set_width">Update</button>
+                <Link to={`/readdata/${id}`} type="submit" class="btn btn-warning set_width">Back</Link>
                 </div>
             </form>
         </>

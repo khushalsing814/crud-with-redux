@@ -21,7 +21,7 @@ function Home() {
 
     return (
         <>
-            <div className='w-25 mt-5 m-auto form_shadow'>
+            <div className='w-25 mt-5 m-auto form_shadow min_width'>
                 <h1 style={{ display: "block", textAlign: "center" }}>Counter</h1>
                 <div className='d-flex justify-content-around'>
                     <button className='btn btn-primary' onClick={Handleincrement} >+</button>

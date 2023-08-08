@@ -58,8 +58,8 @@ function Apicalling() {
     return (
         <>
             <Home />
-            <div className='w-50 mt-5 m-auto form_shadow'>
-                <h1 style={{ textAlign: "center" }}>Table</h1>
+            <div className='container mt-5 m-auto form_shadow'>
+                <h1 className="mb-3" style={{ textAlign: "center" }}>Table</h1>
                 <span className="badge bg-info text-dark position-relative p-1 mb-3" style={{ fontSize: 20 }}>
                     Total no. of records
                     {
@@ -121,14 +121,13 @@ function Apicalling() {
                                                 <td>{item.title}</td>
                                                 <td>{item.author}</td>
                                                 <td> <span className={item.gender == 'male' ? 'badge bg-danger' : 'badge bg-light text-dark'}>{item.gender}</span></td>
-                                                <td className='text-center'>
-                                                    <Link to={`/readdata/${item.id}`} typeof="button" className="btn btn-light me-4 position-relative"
+                                                <td className='text-center' >
+                                                    <Link to={`/readdata/${item.id}`} typeof="button" className="btn btn-light me-4 position-relative res_style set_margin"
                                                     onMouseOver={()=>(setMouseover(mouseover=>({...mouseover,[item.id]:!mouseover[item.id]}))) }>
-                                                    
                                                     <FiEye/>
                                                 {mouseover[item.id] && (<div style={{ position: "absolute", bottom: "46px", whiteSpace: "nowrap", padding: "6px", right: -23, boxShadow: "0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19)" }}>View<svg width="1em" height="1em" viewBox="0 0 16 16" class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill" fill="#212529" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" /></svg></div>)}
                                                 </Link>
-                                                    <button className="btn btn-danger" onClick={() => HandleDelled(item.id)}><FiTrash/></button>
+                                                    <button className="btn btn-danger res_style" onClick={() => HandleDelled(item.id)}><FiTrash/></button>
                                                 </td>
                                             </tr>
                                         )

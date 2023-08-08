@@ -44,7 +44,7 @@ function Createdata() {
     return (
         <>
             <ToastContainer />
-            <form className='m-auto w-25 center_form form_shadow' onSubmit={handleSubmit} >
+            <form className='m-auto center_form form_shadow min_width' onSubmit={handleSubmit} >
                 <h1 className='text-center'>Create Form</h1>
                 <div className="form-group">
                     <label htmlFor="title">Title</label>
@@ -66,8 +66,8 @@ function Createdata() {
                     </div>
                 </div>
                 <div className='d-flex justify-content-between mt-3' >
-                    <button className="btn btn-primary" style={{ width: 150 }}>Submit</button>
-                    <Link to="/crud-with-redux" type="submit" className="btn btn-warning" style={{ width: 150 }}>Back</Link>
+                    <button className="btn btn-primary me-3 set_width">Submit</button>
+                    <Link to="/crud-with-redux" type="submit" className="btn btn-warning set_width " >Back</Link>
                 </div>
             </form>
         </>
