@@ -58,7 +58,7 @@ function Apicalling() {
 
     const loader =()=>{
         if(loading){
-            return (<h1 className='text-center'>loading....</h1>)
+            return (<h1 className='text-center mt-2'>loading....</h1>)
         }
     }
     return (
