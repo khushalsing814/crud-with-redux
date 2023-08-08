@@ -55,6 +55,12 @@ function Apicalling() {
                 })
         }
     }
+
+    const loader =()=>{
+        if(loading){
+            return (<h1 className='text-center'>loading....</h1>)
+        }
+    }
     return (
         <>
             <Home />
@@ -82,9 +88,10 @@ function Apicalling() {
                             <li><a className="dropdown-item" name="female" onClick={Handledropdown}> Female</a></li>
                         </ul>
                     </div>
-                    <Link to="/createdata" className="btn btn-danger d-flex justify-content-center align-items-center font_size" style={{ width: 150 }}>Add +</Link>
+                    <Link to="/createdata" className="btn btn-danger d-flex justify-content-center align-items-center font_size" style={{ width: 150 ,whiteSpace:"nowrap"}}>Add +</Link>
                 </div>
                 <div style={{ overflow: "auto" }}>
+                {loader()}
                     <table className="table table-dark table-striped mt-3">
                         <thead>
                             <tr>
