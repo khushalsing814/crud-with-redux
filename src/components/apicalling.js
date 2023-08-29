@@ -64,8 +64,8 @@ function Apicalling() {
     }
     return (
         <>
-            <Home />
-            <div className='container mt-5 m-auto form_shadow set_width_style'>
+            {/* <Home /> */}
+            <div className='container m-auto form_shadow set_width_style center_table'>
                 <h1 className="mb-3" style={{ textAlign: "center" }}>Table</h1>
                 <span className="badge bg-info text-dark position-relative p-1 mb-3" style={{ fontSize: 20 }}>
                     Total no. of records
